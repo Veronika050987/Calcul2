@@ -152,7 +152,7 @@ INT WINAPI WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		CreateWindowEx
 		(
 			NULL, "Button", ".",
-			WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+			WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_BITMAP,
 			g_i_BUTTON_START_X + g_i_BUTTON_SPACE * 2,
 			g_i_BUTTON_START_Y + g_i_BUTTON_SPACE * 3,
 			g_i_BUTTON_SIZE, g_i_BUTTON_SIZE,
@@ -167,7 +167,7 @@ INT WINAPI WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 			CreateWindowEx
 			(
 				NULL, "Button", g_sz_OPERATIONS[i],
-				WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+				WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_BITMAP,
 				g_i_BUTTON_START_X + g_i_BUTTON_SPACE * 3, g_i_BUTTON_START_Y + g_i_BUTTON_SPACE * (3 - i),
 				g_i_BUTTON_SIZE, g_i_BUTTON_SIZE,
 				hwnd,
@@ -181,7 +181,7 @@ INT WINAPI WndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 			CreateWindowEx
 			(
 				NULL, "Button", g_sz_EDIT[i],
-				WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+				WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | BS_BITMAP,
 				g_i_BUTTON_START_X + g_i_BUTTON_SPACE * 4,
 				g_i_BUTTON_START_Y + g_i_BUTTON_SPACE * i,
 				g_i_BUTTON_SIZE, i < 2 ? g_i_BUTTON_SIZE : g_i_BUTTON_SIZE_DOUBLE,
